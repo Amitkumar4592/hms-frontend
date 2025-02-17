@@ -12,6 +12,10 @@ import PatientDashboard from "./pages/patient/PatientDashboard";
 import BookAppointment from "./pages/patient/BookAppointment";
 import MyAppointments from "./pages/patient/MyAppointments";
 import MyHealthRecords from "./pages/patient/MyHealthRecords";
+import DoctorDashboard from "./pages/doctor/DoctorDashboard";
+import DoctorAppointments from "./pages/doctor/DoctorAppointments";
+import UpdateAvailability from "./pages/doctor/UpdateAvailability";
+import UploadHealthRecords from "./pages/doctor/UploadHealthRecords";
 
 function App() {
   return (
@@ -28,6 +32,10 @@ function App() {
         <Route path="/patient/appointments" element={<MyAppointments />} />
         <Route path="/patient/book-appointment" element={<BookAppointment />} />
         <Route path="/patient/records" element={<MyHealthRecords />} />
+        <Route path="/doctor/dashboard" element={<DoctorDashboard />} />
+        <Route path="/doctor/appointments" element={<DoctorAppointments />} />
+        <Route path="/doctor/status" element={<UpdateAvailability />} />
+        <Route path="/doctor/health-records" element={<UploadHealthRecords />} />
         <Route path="/help" element={<Help />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

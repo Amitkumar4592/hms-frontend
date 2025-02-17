@@ -1,0 +1,34 @@
+.availability-container {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .available-btn, .unavailable-btn {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .available-btn {
+    background: green;
+    color: white;
+  }
+  
+  .unavailable-btn {
+    background: red;
+    color: white;
+  }
+  
+  .available-btn:hover {
+    background: darkgreen;
+  }
+  
+  .unavailable-btn:hover {
+    background: darkred;
+  }
+  

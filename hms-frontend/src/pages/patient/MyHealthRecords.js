@@ -16,14 +16,28 @@ function MyHealthRecords() {
 
   const fetchHealthRecords = async (patientId) => {
     try {
+      console.log("Fetching health records for patient:", patientId);
+      
       const response = await axios.get(`${process.env.REACT_APP_API_BASE_URL}/api/patient/health-records/${patientId}`);
-      setRecords(response.data.records || []);
-      setLoading(false);
+      
+      console.log("API Response:", response.data); // Debugging Log
+  
+      if (!response.data.records || response.data.records.length === 0) {
+        setRecords([]);
+        console.warn("No health records found.");
+      } else {
+        setRecords(response.data.records);
+      }
     } catch (error) {
-      console.error("Error fetching health records:", error);
-      setLoading(false);
+      console.error("Error fetching health records:", error.response?.data || error);
+      setRecords([]); // Prevent infinite loading state
+    } finally {
+      setLoading(false); // Ensure loading stops
     }
   };
+  
+  
+
 
   return (
     <DashboardLayout>
