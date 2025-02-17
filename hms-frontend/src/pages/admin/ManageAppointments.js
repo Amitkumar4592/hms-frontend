@@ -49,13 +49,20 @@ function ManageAppointments() {
 
   const handleUpdateStatus = async (id, newStatus) => {
     try {
-      await axios.put(`${process.env.REACT_APP_API_BASE_URL}/api/admin/update-appointment/${id}`, { status: newStatus });
+      const response = await axios.put(
+        `${process.env.REACT_APP_API_BASE_URL}/api/admin/update-appointment/${id}`,
+        { status: newStatus }
+      );
+  
+      console.log("Update Response:", response.data); // Debugging Log
       setMessage(`Appointment marked as ${newStatus}!`);
       fetchAppointments();
     } catch (error) {
+      console.error("Error updating appointment status:", error.response?.data || error.message);
       setMessage("Error updating appointment status.");
     }
   };
+  
 
   const filteredAppointments = appointments.filter((appointment) => {
     const patientName = patients[appointment.patientId] ? patients[appointment.patientId].toLowerCase() : "";

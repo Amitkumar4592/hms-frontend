@@ -10,6 +10,8 @@ import ManagePatients from "./pages/admin/ManagePatients";
 import ManageAppointments from "./pages/admin/ManageAppointments";
 import PatientDashboard from "./pages/patient/PatientDashboard";
 import BookAppointment from "./pages/patient/BookAppointment";
+import MyAppointments from "./pages/patient/MyAppointments";
+import MyHealthRecords from "./pages/patient/MyHealthRecords";
 
 function App() {
   return (
@@ -23,7 +25,9 @@ function App() {
         <Route path="/admin/manage-patients" element={<ManagePatients />} />
         <Route path="/admin/manage-appointments" element={<ManageAppointments />} />
         <Route path="/patient/dashboard" element={<PatientDashboard />} />
+        <Route path="/patient/appointments" element={<MyAppointments />} />
         <Route path="/patient/book-appointment" element={<BookAppointment />} />
+        <Route path="/patient/records" element={<MyHealthRecords />} />
         <Route path="/help" element={<Help />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

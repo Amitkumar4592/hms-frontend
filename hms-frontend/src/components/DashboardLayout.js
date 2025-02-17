@@ -40,7 +40,7 @@ function DashboardLayout({ children }) {
           {user?.role === "PATIENT" && (
             <>
               <li><Link to="/patient/dashboard">Dashboard</Link></li>
-              <li><Link to="/patient/book">Book Appointment</Link></li>
+              <li><Link to="/patient/book-appointment">Book Appointment</Link></li>
               <li><Link to="/patient/appointments">My Appointments</Link></li>
               <li><Link to="/patient/records">My Health Records</Link></li>
             </>
