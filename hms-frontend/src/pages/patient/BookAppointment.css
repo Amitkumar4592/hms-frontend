@@ -1,0 +1,31 @@
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    gap: 15px;
+  }
+  
+  select, input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .message {
+    color: green;
+    font-weight: bold;
+  }
+  

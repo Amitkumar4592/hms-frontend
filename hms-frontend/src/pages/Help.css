@@ -1,0 +1,20 @@
+.help-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .faq {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .faq h3 {
+    color: #007bff;
+  }
+  
+  .faq p {
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,53 @@
+/* Appointments Table */
+.appointments-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .appointments-table th, .appointments-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .appointments-table th {
+    background: #007bff;
+    color: white;
+  }
+  
+  .complete-btn, .cancel-btn {
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 5px;
+  }
+  
+  .complete-btn {
+    background: green;
+    color: white;
+  }
+  
+  .complete-btn:hover {
+    background: darkgreen;
+  }
+  
+  .cancel-btn {
+    background: red;
+    color: white;
+  }
+  
+  .cancel-btn:hover {
+    background: darkred;
+  }
+  
+  /* Search Input */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

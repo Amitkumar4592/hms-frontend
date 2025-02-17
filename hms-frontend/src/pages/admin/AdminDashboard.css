@@ -1,0 +1,79 @@
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: width 0.3s;
+  }
+  
+  .sidebar.closed {
+    width: 70px;
+  }
+  
+  .sidebar h2 {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 15px 0;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+  }
+  
+  .sidebar a:hover {
+    background: #0056b3;
+  }
+  
+  .logout-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: auto;
+  }
+  
+  .logout-btn:hover {
+    background: darkred;
+  }
+  
+  .dashboard-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .toggle-btn {
+    position: absolute;
+    left: 260px;
+    top: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .sidebar.closed + .dashboard-content .toggle-btn {
+    left: 80px;
+  }
+  
